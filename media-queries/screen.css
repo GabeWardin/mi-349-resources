@@ -23,6 +23,11 @@ header, footer {
     background: #3498db;
 }
 
+nav li {
+    display: inline-block;
+    padding: 1em;
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -32,4 +37,25 @@ header, footer {
     padding: 1em;
     flex: 1 1 25%;
     width: 25%;
+}
+
+nav li {
+    padding: 1em;
+    display: none;
+}
+
+header:hover nav li {
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .content section {
+        flex: 1 1 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+
 }
